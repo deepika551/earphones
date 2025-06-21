@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - AudioHub</title>
+    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="register-container">
+        <div class="register-box">
+            <div class="form-toggle">
+                <button class="toggle-btn active" data-form="register">Register</button>
+                <button class="toggle-btn" data-form="login">Login</button>
+            </div>
+
+            <!-- Register Form -->
+            <form class="register-form" id="registerForm" style="display: block;">
+                <!-- Name -->
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                </div>
+
+                <!-- Email -->
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <!-- Phone -->
+                <div class="form-group">
+                    <div class="phone-input">
+                        <div class="country-code">+91</div>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                    </div>
+                </div>
+
+                <!-- Password -->
+                <div class="form-group">
+                    <div class="password-input">
+                        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                        <button type="button" class="show-password">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                    <div class="password-strength">
+                        <div class="strength-indicator"></div>
+                        <span class="strength-text">Weak</span>
+                    </div>
+                    <div class="special-chars">
+                        <span class="active">A-Z</span>
+                        <span class="active">a-z</span>
+                        <span class="active">0-9</span>
+                        <span class="active">@#$%</span>
+                    </div>
+                </div>
+
+                <!-- Gender -->
+                <div class="form-group">
+                    <div class="gender-options">
+                        <div class="gender-option">
+                            <input type="radio" id="male" name="gender" value="male">
+                            <div class="gender-icon"><i class="fas fa-male"></i></div>
+                            <span class="gender-text">Male</span>
+                        </div>
+                        <div class="gender-option">
+                            <input type="radio" id="female" name="gender" value="female">
+                            <div class="gender-icon"><i class="fas fa-female"></i></div>
+                            <span class="gender-text">Female</span>
+                        </div>
+                        <div class="gender-option">
+                            <input type="radio" id="other" name="gender" value="other">
+                            <div class="gender-icon"><i class="fas fa-transgender"></i></div>
+                            <span class="gender-text">Other</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Date of Birth -->
+                <div class="form-group">
+                    <input type="date" id="dob" name="dob" placeholder="Select your date of birth" required>
+                    <span id="age-verification"></span>
+                </div>
+
+                <!-- Terms and Conditions -->
+                <div class="terms">
+                    <input type="checkbox" id="terms" required>
+                    <label for="terms">I agree to the <a href="#">Terms and Conditions</a></label>
+                </div>
+
+                <!-- Register Button -->
+                <button type="submit" class="register-btn">Register</button>
+            </form>
+
+            <!-- Login Form -->
+            <form class="login-form" id="loginForm" style="display: none;">
+                <!-- Email/Username -->
+                <div class="form-group">
+                    <input type="email" id="loginEmail" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <!-- Password -->
+                <div class="form-group">
+                    <div class="password-input">
+                        <input type="password" id="loginPassword" name="password" placeholder="Enter your password" required>
+                        <button type="button" class="show-password">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Remember Me -->
+                <div class="remember-me">
+                    <input type="checkbox" id="remember" name="remember">
+                    <label for="remember">Remember me</label>
+                </div>
+
+                <!-- Forgot Password -->
+                <a href="#" class="forgot-password">Forgot password?</a>
+
+                <!-- Login Button -->
+                <button type="submit" class="login-btn">Login</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
