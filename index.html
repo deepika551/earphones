@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EarPhones</title>
+    <link rel="stylesheet" href="project.css">
+    <script src="project.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#home" class="logo-link">
+                    <span>AudioHub</span>
+                </a>
+            </div>
+            
+            <!-- Mobile Menu Toggle -->
+            <div class="mobile-menu-toggle">
+                <button class="hamburger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+
+            <div class="nav-content">
+                <div class="nav-content">
+                    <div class="nav-content">
+                        <div class="nav-content">
+                            <ul class="menu">
+                                <li class="menu-item">
+                                    <a href="#home" class="dropdown-toggle">
+                                        <span>Home</span>
+                                        <i class="fas fa-caret-down"></i>
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <a href="#about" class="dropdown-item">About Us</a>
+                                        <a href="#services" class="dropdown-item">Services</a>
+                                        <a href="#news" class="dropdown-item">Latest News</a>
+                                        <a href="#events" class="dropdown-item">Upcoming Events</a>
+                                    </div>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#products">
+                                        <span>Products</span>
+                                        <i class="fas fa-caret-down"></i>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#brands">
+                                        <span>Brands</span>
+                                        <i class="fas fa-caret-down"></i>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#contact">
+                                        <span>Contact</span>
+                                        <i class="fas fa-caret-down"></i>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#favorites">
+                                        <span>Favorites</span>
+                                        <i class="fas fa-caret-down"></i>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="register.html">
+                                        <span>Register</span>
+                                        <i class="fas fa-user-plus"></i>
+                                    </a>
+                                </li>
+                                <li class="menu-item cart-header">
+                                    <a href="#cart" class="cart-icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu-overlay">
+            <div class="mobile-menu-content">
+                <ul class="mobile-menu-list">
+                    <li class="menu-item">
+                        <a href="#home">
+                            <i class="icon home-icon"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#products">
+                            <i class="icon products-icon"></i>
+                            <span>Products</span>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#brands">
+                            <i class="icon brands-icon"></i>
+                            <span>Brands</span>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#contact">
+                            <i class="icon contact-icon"></i>
+                            <span>Contact</span>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#favorites">
+                            <i class="icon favorites-icon"></i>
+                            <span>Favorites</span>
+                        </a>
+                    </li>
+                    <li class="menu-item cart-header">
+                        <a href="#cart" class="cart-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-images">
+                <img src="back1.webp" alt="Background 1" class="hero-image" loading="lazy" onerror="this.src='placeholder.jpg'">
+                <img src="bach.webp" alt="Background 2" class="hero-image" loading="lazy" onerror="this.src='placeholder.jpg'">
+                <img src="back.jpg" alt="Background 3" class="hero-image" loading="lazy" onerror="this.src='placeholder.jpg'">
+                <img src="back3.webp" alt="Background 4" class="hero-image" loading="lazy" onerror="this.src='placeholder.jpg'">
+                <img src="bach1.avif" alt="Background 5" class="hero-image" loading="lazy" onerror="this.src='placeholder.jpg'">
+            </div>
+        </section>
+
+        <!-- Favorites Indicator Section -->
+        <div class="favorites-indicator">
+            <div class="indicator-content">
+                <i class="fas fa-heart"></i>
+                <span>Added to Favorites</span>
+            </div>
+        </div>
+
+        <!-- Products Section -->
+        <section id="products" class="products-section">
+            <h2 class="section-title">Our Products</h2>
+            <div class="products-grid">
+                <!-- Wireless Headphones -->
+                <div class="product-card" data-product-id="1">
+                    <div class="product-header">
+                        <button class="product-btn favorite-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <img src="wireless-headphones.jpg" alt="Wireless Headphones" class="product-image">
+                    <div class="product-content">
+                        <h3 class="product-name">Wireless Headphones</h3>
+                        <p class="product-description">Experience the freedom of wireless listening with our premium wireless headphones, featuring advanced noise cancellation and crystal-clear sound.</p>
+                        <div class="product-details">
+                            <div class="product-price">₹14,999</div>
+                            <button class="product-btn add-to-cart">Add to Cart</button>
+                        </div>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="rating-count">(4.2)</span>
+                        </div>
+                        <ul class="product-features">
+                            <li>Bluetooth 5.0</li>
+                            <li>40 Hours Battery</li>
+                            <li>Touch Controls</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- True Wireless Earbuds -->
+                <div class="product-card" data-product-id="2">
+                    <div class="product-header">
+                        <button class="product-btn favorite-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <img src="true-wireless.jpg" alt="True Wireless Earbuds" class="product-image">
+                    <div class="product-content">
+                        <h3 class="product-name">True Wireless Earbuds</h3>
+                        <p class="product-description">Enjoy the ultimate wireless experience with our true wireless earbuds, featuring IPX7 waterproofing and up to 8 hours of playtime.</p>
+                        <div class="product-details">
+                            <div class="product-price">₹9,999</div>
+                            <button class="product-btn add-to-cart">Add to Cart</button>
+                        </div>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(4.8)</span>
+                        </div>
+                        <ul class="product-features">
+                            <li>IPX7 Waterproof</li>
+                            <li>8 Hours Playtime</li>
+                            <li>Touch Controls</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Gaming Headset -->
+                <div class="product-card" data-product-id="3">
+                    <div class="product-header">
+                        <button class="product-btn favorite-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <img src="gaming-headset.jpg" alt="Gaming Headset" class="product-image">
+                    <div class="product-content">
+                        <h3 class="product-name">Gaming Headset</h3>
+                        <p class="product-description">Immerse yourself in the game with our gaming headset, featuring 7.1 surround sound and a detachable mic for crystal-clear communication.</p>
+                        <div class="product-details">
+                            <div class="product-price">₹12,999</div>
+                            <button class="product-btn add-to-cart">Add to Cart</button>
+                        </div>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="rating-count">(4.3)</span>
+                        </div>
+                        <ul class="product-features">
+                            <li>7.1 Surround Sound</li>
+                            <li>RGB Lighting</li>
+                            <li>Comfort Fit</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Studio Headphones -->
+                <div class="product-card" data-product-id="4">
+                    <div class="product-header">
+                        <button class="product-btn favorite-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <img src="studio-headphones.jpg" alt="Studio Headphones" class="product-image">
+                    <div class="product-content">
+                        <h3 class="product-name">Studio Headphones</h3>
+                        <p class="product-description">Experience professional-grade sound with our studio headphones, featuring hi-res audio and an open-back design for accurate sound reproduction.</p>
+                        <div class="product-details">
+                            <div class="product-price">₹19,999</div>
+                            <button class="product-btn add-to-cart">Add to Cart</button>
+                        </div>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(4.9)</span>
+                        </div>
+                        <ul class="product-features">
+                            <li>Open Back Design</li>
+                            <li>40mm Drivers</li>
+                            <li>Professional Sound</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Sports Earbuds -->
+                <div class="product-card" data-product-id="5">
+                    <div class="product-header">
+                        <button class="product-btn favorite-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <img src="sports-earbuds.jpg" alt="Sports Earbuds" class="product-image">
+                    <div class="product-content">
+                        <h3 class="product-name">Sports Earbuds</h3>
+                        <p class="product-description">Stay motivated with our sports earbuds, featuring IPX8 waterproofing and up to 10 hours of battery life.</p>
+                        <div class="product-details">
+                            <div class="product-price">₹7,999</div>
+                            <button class="product-btn add-to-cart">Add to Cart</button>
+                        </div>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="rating-count">(4.4)</span>
+                        </div>
+                        <ul class="product-features">
+                            <li>IPX8 Waterproof</li>
+                            <li>Secure Fit</li>
+                            <li>10 Hours Battery</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Noise Cancelling Headphones -->
+                <div class="product-card" data-product-id="6">
+                    <div class="product-header">
+                        <button class="product-btn favorite-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <img src="noise-cancelling.jpg" alt="Noise Cancelling Headphones" class="product-image">
+                    <div class="product-content">
+                        <h3 class="product-name">Noise Cancelling Headphones</h3>
+                        <p class="product-description">Escape the noise with our noise-cancelling headphones, featuring advanced ANC technology and up to 30 hours of battery life.</p>
+                        <div class="product-details">
+                            <div class="product-price">₹24,999</div>
+                            <button class="product-btn add-to-cart">Add to Cart</button>
+                        </div>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(4.7)</span>
+                        </div>
+                        <ul class="product-features">
+                            <li>Advanced ANC</li>
+                            <li>Comfort Fit</li>
+                            <li>Smart Controls</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- New Products -->
+                <div class="product-card" data-product-id="7">
+                    <div class="product-header">
+                        <button class="product-btn favorite-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <img src="neckband.jpg" alt="Neckband Earphones" class="product-image">
+                    <div class="product-content">
+                        <h3 class="product-name">Neckband Earphones</h3>
+                        <p class="product-description">Experience the comfort and convenience of our neckband earphones, featuring up to 18 hours of battery life and IPX5 waterproofing.</p>
+                        <div class="product-details">
+                            <div class="product-price">₹6,999</div>
+                            <button class="product-btn add-to-cart">Add to Cart</button>
+                        </div>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="rating-count">(4.5)</span>
+                        </div>
+                        <ul class="product-features">
+                            <li>18 Hours Battery</li>
+                            <li>IPX5 Waterproof</li>
+                        
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="product-card" data-product-id="8">
+                    <div class="product-header">
+                        <button class="product-btn favorite-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <img src="over-ear.jpg" alt="Over-Ear Headphones" class="product-image">
+                    <div class="product-content">
+                        <h3 class="product-name">Over-Ear Headphones</h3>
+                        <p class="product-description">Immerse yourself in sound with our over-ear headphones, featuring hi-res audio and up to 30 hours of battery life.</p>
+                        <div class="product-details">
+                            <div class="product-price">₹17,999</div>
+                            <button class="product-btn add-to-cart">Add to Cart</button>
+                        </div>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(4.9)</span>
+                        </div>
+                        <ul class="product-features">
+                            <li>Hi-Res Audio</li>
+                            <li>Memory Foam Earpads</li>
+                        
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="product-card" data-product-id="9">
+                    <div class="product-header">
+                        <button class="product-btn favorite-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <img src="premium-headphones.jpg" alt="Premium Headphones" class="product-image">
+                    <div class="product-content">
+                        <h3 class="product-name">Premium Headphones</h3>
+                        <p class="product-description">Experience the ultimate in sound quality with our premium headphones, featuring Dolby Atmos support and up to 45 hours of battery life.</p>
+                        <div class="product-details">
+                            <div class="product-price">₹29,999</div>
+                            <button class="product-btn add-to-cart">Add to Cart</button>
+                        </div>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(4.8)</span>
+                        </div>
+                        <ul class="product-features">
+                            <li>Dolby Atmos Support</li>
+                            <li>45 Hours Battery</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="product-card" data-product-id="10">
+                    <div class="product-header">
+                        <button class="product-btn favorite-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <img src="sport-pro-earbuds.jpg" alt="Sport Pro Earbuds" class="product-image">
+                    <div class="product-content">
+                        <h3 class="product-name">Sport Pro Earbuds</h3>
+                        <p class="product-description">Take your workout to the next level with our sport pro earbuds, featuring IPX9 waterproofing and up to 24 hours of battery life.</p>
+                        <div class="product-details">
+                            <div class="product-price">₹14,999</div>
+                            <button class="product-btn add-to-cart">Add to Cart</button>
+                        </div>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="rating-count">(4.7)</span>
+                        </div>
+                        <ul class="product-features">
+                            <li>IPX9 Waterproof</li>
+                            <li>24 Hours Battery</li>
+        
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="product-card" data-product-id="11">
+                    <div class="product-header">
+                        <button class="product-btn favorite-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <img src="gaming-pro.jpg" alt="Gaming Pro Headset" class="product-image">
+                    <div class="product-content">
+                        <h3 class="product-name">Gaming Pro Headset</h3>
+                        <p class="product-description">Dominate the game with our gaming pro headset, featuring true 7.1 surround sound and a 4D positional audio system.</p>
+                        <div class="product-details">
+                            <div class="product-price">₹24,999</div>
+                            <button class="product-btn add-to-cart">Add to Cart</button>
+                        </div>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(4.9)</span>
+                        </div>
+                        <ul class="product-features">
+                            <li>True 7.1 Surround</li>
+                            <li>4D Positional Audio</li>
+                            <li>HD Voice Mic</li>
+        
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="product-card" data-product-id="12">
+                    <div class="product-header">
+                        <button class="product-btn favorite-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <img src="anc-earbuds.jpg" alt="ANC Earbuds" class="product-image">
+                    <div class="product-content">
+                        <h3 class="product-name">ANC Earbuds</h3>
+                        <p class="product-description">Escape the noise with our ANC earbuds, featuring advanced noise cancellation and up to 30 hours of battery life.</p>
+                        <div class="product-details">
+                            <div class="product-price">₹19,999</div>
+                            <button class="product-btn add-to-cart">Add to Cart</button>
+                        </div>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(4.8)</span>
+                        </div>
+                        <ul class="product-features">
+                            <li>Advanced ANC</li>
+                            <li>30 Hours Battery</li>
+                            <li>Smart Controls</li>
+                           
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Favorites Section -->
+        <section id="favorites" class="favorites-section">
+            <h2 class="section-title">Favorites</h2>
+            <div class="favorites-grid"></div>
+            <div class="no-favorites" style="display: none;">
+                <p>No items in favorites yet</p>
+            </div>
+        </section>
+
+        <!-- Brands Section -->
+        <section id="brands" class="brands-section">
+            <h2 class="section-title">Our Brands</h2>
+            <div class="brands-grid">
+                <div class="brand-card" data-brand="sony">
+                    <div class="brand-image-container">
+                        <img src="sony.jpeg" alt="Sony" class="brand-logo" loading="lazy">
+                    </div>
+                    <div class="brand-content">
+                        <h3>Sony</h3>
+                        <p>Premium audio technology with innovative features</p>
+                        <ul class="brand-features">
+                            <li>HD Noise Cancelling</li>
+                            <li>Long Battery Life</li>
+                            <li>Smart Features</li>
+
+                        </ul>
+                        <button class="brand-btn">Explore Sony</button>
+                    </div>
+                </div>
+                <div class="brand-card" data-brand="bose">
+                    <div class="brand-image-container">
+                        <img src="bose.jpeg" alt="Bose" class="brand-logo" loading="lazy">
+                    </div>
+                    <div class="brand-content">
+                        <h3>Bose</h3>
+                        <p>Legendary sound quality and performance</p>
+                        <ul class="brand-features">
+                            <li>Acoustic Noise Cancelling</li>
+                            <li>Exceptional Sound Quality</li>
+                            <li>Comfortable Design</li>
+                        </ul>
+                        <button class="brand-btn">Explore Bose</button>
+                    </div>
+                </div>
+                <div class="brand-card" data-brand="jbl">
+                    <div class="brand-image-container">
+                        <img src="jbl.jpeg" alt="JBL" class="brand-logo" loading="lazy">
+                    </div>
+                    <div class="brand-content">
+                        <h3>JBL</h3>
+                        <p>Professional-grade audio for everyone</p>
+                        <ul class="brand-features">
+                            <li>Pure Bass Sound</li>
+                            <li>Waterproof Design</li>
+                            <li>Long Battery Life</li>
+                           
+                        </ul>
+                        <button class="brand-btn">Explore JBL</button>
+                    </div>
+                </div>
+                <div class="brand-card" data-brand="beats">
+                    <div class="brand-image-container">
+                        <img src="beats.jpeg" alt="Beats" class="brand-logo" loading="lazy">
+                    </div>
+                    <div class="brand-content">
+                        <h3>Beats</h3>
+                        <p>Style meets sound in perfect harmony</p>
+                        <ul class="brand-features">
+                            <li>Active Noise Cancelling</li>
+                            <li>Studio Quality Sound</li>
+                            <li>Fashionable Design</li>
+                        </ul>
+                        <button class="brand-btn">Explore Beats</button>
+                    </div>
+                </div>
+                <div class="brand-card" data-brand="sennheiser">
+                    <div class="brand-image-container">
+                        <img src="sennheiser.jpeg" alt="Sennheiser" class="brand-logo" loading="lazy">
+                    </div>
+                    <div class="brand-content">
+                        <h3>Sennheiser</h3>
+                        <p>Precision audio engineering excellence</p>
+                        <ul class="brand-features">
+                            <li>Premium Sound Quality</li>
+                            <li>Professional Grade</li>
+                            <li>Comfortable Fit</li>
+                    
+                        </ul>
+                        <button class="brand-btn">Explore Sennheiser</button>
+                    </div>
+                </div>
+                <div class="brand-card" data-brand="skullcandy">
+                    <div class="brand-image-container">
+                        <img src="skullcandy.jpeg" alt="Skullcandy" class="brand-logo" loading="lazy">
+                    </div>
+                    <div class="brand-content">
+                        <h3>Skullcandy</h3>
+                        <p>Unleash your sound with style</p>
+                        <ul class="brand-features">
+                            <li>Street Style Design</li>
+                            <li>Powerful Bass</li>
+                            
+                            <li>Long Battery</li>
+                        </ul>
+                        <button class="brand-btn">Explore Skullcandy</button>
+                    </div>
+                </div>
+                <div class="brand-card" data-brand="audio-technica">
+                    <div class="brand-image-container">
+                        <img src="audio-technica.jpeg" alt="Audio-Technica" class="brand-logo" loading="lazy">
+                    </div>
+                    <div class="brand-content">
+                        <h3>Audio-Technica</h3>
+                        <p>Professional audio excellence</p>
+                        <ul class="brand-features">
+                            <li>High-Fidelity Sound</li>
+                            <li>Durable Build</li>
+                            <li>Studio Grade</li>
+                        </ul>
+                        <button class="brand-btn">Explore Audio-Technica</button>
+                    </div>
+                </div>
+                <div class="brand-card" data-brand="akg">
+                    <div class="brand-image-container">
+                        <img src="akg.jpeg" alt="AKG" class="brand-logo" loading="lazy">
+                    </div>
+                    <div class="brand-content">
+                        <h3>AKG</h3>
+                        <p>Premium audio for professionals</p>
+                        <ul class="brand-features">
+                            <li>Professional Sound</li>
+                            <li>Studio Quality</li>
+                        
+                            <li>Advanced Features</li>
+                        </ul>
+                        <button class="brand-btn">Explore AKG</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-container">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <i class="fas fa-headphones-alt"></i>
+                        <h3>Customer Support</h3>
+                        <p>Available 24/7</p>
+                        <p>Email: support@headphonic.com</p>
+                        <p>Phone: +1 (555) 123-4567</p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Our Location</h3>
+                        <p>123 Audio Street</p>
+                        <p>Sound City, SC 12345</p>
+                        <p>United States</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <i class="fas fa-truck"></i>
+                        <h3>Shipping Info</h3>
+                        <p>Free shipping on orders over ₹4999</p>
+                        <p>2-3 business days delivery</p>
+                        <p>Track your order anytime</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <i class="fas fa-credit-card"></i>
+                        <h3>Payment Methods</h3>
+                        <p>Credit/Debit Cards</p>
+                        <p>Net Banking</p>
+                        <p>UPI & Wallets</p>
+                        <p>Cash on Delivery</p>
+                    </div>
+                </div>
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h3>Send Us a Message</h3>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="phone" placeholder="Your Phone (Optional)">
+                        </div>
+                        <div class="form-group">
+                            <select name="subject" required>
+                                <option value="">Select Subject</option>
+                                <option value="order">Order Inquiry</option>
+                                <option value="product">Product Information</option>
+                                <option value="shipping">Shipping & Delivery</option>
+                                <option value="returns">Returns & Refunds</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- Footer Section -->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>We are dedicated to providing premium quality headphones and audio equipment. Our mission is to enhance your listening experience with innovative technology and superior sound quality.</p>
+                    <div class="social-links">
+                        <a href="https://facebook.com" class="social-link" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com" class="social-link" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://instagram.com" class="social-link" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://linkedin.com" class="social-link" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://youtube.com" class="social-link" target="_blank">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#brands">Brands</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#about">About Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for the latest updates and exclusive offers.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-container">
+                    <div class="footer-bottom-content">
+                        <div class="copyright">
+                            <p>&copy; 2025 Headphones Hub. All rights reserved.</p>
+                        </div>
+                        <div class="payment-methods">
+                            <span class="payment-icon">
+                                <i class="fas fa-credit-card"></i>
+                                <span>Credit/Debit Cards</span>
+                            </span>
+                            <span class="payment-icon">
+                                <i class="fas fa-bank"></i>
+                                <span>Net Banking</span>
+                            </span>
+                            <span class="payment-icon">
+                                <i class="fas fa-qrcode"></i>
+                                <span>UPI</span>
+                            </span>
+                            <span class="payment-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                                <span>Mobile Wallets</span>
+                            </span>
+                            <span class="payment-icon">
+                                <i class="fab fa-google-pay"></i>
+                                <span>Google Pay</span>
+                            </span>
+                            <span class="payment-icon">
+                                <i class="fab fa-paypal"></i>
+                                <span>PayPal</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+</body>
+</html>
